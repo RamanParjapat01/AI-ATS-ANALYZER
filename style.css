@@ -1,0 +1,78 @@
+/* 1. Classic Dark Background - Clean and Minimalist */
+.stApp {
+    background-color: #121212;
+    background-image: linear-gradient(to bottom right, #121212, #1e1e24);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
+}
+
+/* 2. Titles - Classic Tech Blue */
+h1,
+h2,
+h3,
+.stText {
+    color: #4da8da !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* 3. File Uploader Card - 3D Tilted Glass */
+div[data-testid="stFileUploader"] {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(77, 168, 218, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transform: perspective(1000px) rotateX(4deg) rotateY(-2deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+div[data-testid="stFileUploader"]:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.02);
+    border: 1px solid rgba(77, 168, 218, 0.6);
+    box-shadow: 0 15px 40px rgba(77, 168, 218, 0.15);
+}
+
+/* 4. JD Text Area Card - 3D Tilted Right */
+div[data-testid="stTextArea"] {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(77, 168, 218, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transform: perspective(1000px) rotateX(4deg) rotateY(2deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+div[data-testid="stTextArea"]:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.02);
+    border: 1px solid rgba(77, 168, 218, 0.6);
+    box-shadow: 0 15px 40px rgba(77, 168, 218, 0.15);
+}
+
+div[data-testid="stTextArea"] textarea {
+    background: rgba(0, 0, 0, 0.2) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 6px;
+}
+
+/* 5. Classic Tech Button with Angled Edges */
+div[data-testid="stButton"]>button {
+    background: transparent;
+    color: #4da8da;
+    border: 1px solid #4da8da;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    padding: 10px 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+div[data-testid="stButton"]>button:hover {
+    background: rgba(77, 168, 218, 0.1);
+    box-shadow: 0 0 20px rgba(77, 168, 218, 0.3);
+    transform: scale(1.05);
+}
